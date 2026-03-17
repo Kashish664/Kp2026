@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 600px; margin: 20px auto; padding: 20px; }
+        fieldset { border: 1px solid #ccc; border-radius: 8px; margin-bottom: 20px; padding: 15px; }
+        legend { font-weight: bold; padding: 0 10px; color: #2c3e50; }
+        div { margin-bottom: 10px; }
+        label { display: inline-block; margin-bottom: 5px; }
+        .submit-btn { background-color: #3498db; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h2>Scholarship & Seminar Registration</h2>
+
+    <form action="#" method="post">
+        
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Details</legend>
+            <div>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+            </div>
+            
+            <div>
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+        </fieldset>
+
+        <!-- Academic Information Section -->
+        <fieldset>
+            <legend>Academic Status</legend>
+            <div>
+                <label for="education">Current Level of Education:</label><br>
+                <select id="education" name="education">
+                    <option value="highschool">High School</option>
+                    <option value="undergraduate">Undergraduate</option>
+                    <option value="postgraduate">Postgraduate</option>
+                    <option value="phd">PhD / Research</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Areas of Interest (Select all that apply):</label><br>
+                <input type="checkbox" id="tech" name="interest" value="technology">
+                <label for="tech">Technology</label><br>
+                <input type="checkbox" id="science" name="interest" value="science">
+                <label for="science">Science</label><br>
+                <input type="checkbox" id="arts" name="interest" value="arts">
+                <label for="arts">Arts & Humanities</label>
+            </div>
+        </fieldset>
+
+        <!-- Form Submission -->
+        <div>
+            <input type="submit" value="Register Now" class="submit-btn">
+            <input type="reset" value="Clear Form">
+        </div>
+
+    </form>
+
+</body>
+</html>
